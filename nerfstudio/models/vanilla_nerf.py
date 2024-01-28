@@ -56,6 +56,9 @@ class VanillaModelConfig(ModelConfig):
     background_color: Literal["random", "last_sample", "black", "white"] = "white"
     """Whether to randomize the background color."""
 
+    num_bounces: int = 1
+    """Maximum number of ray reflections."""
+
 
 class NeRFModel(Model):
     """Vanilla NeRF model
